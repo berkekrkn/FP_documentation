@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\thispath{Plots/surf}
+
+\usepgfplotslibrary{units}
+\usepgfplotslibrary{colormaps}
+\usetikzlibrary{pgfplots.colorbrewer}
+\pgfplotsset{surf shading/precision=pdf}
+
+
+
+\def\colorbartextwidth{1.75em}
+\def\colorbarwidth{0.25cm}
+\def\axislabelshift{0.125cm}
+
+
+\pgfplotsset{
+  colormap/hotsteep/.style={
+colormap={hotsteep}{[1cm]rgb255(0cm)=(255,255,255) rgb255(27cm)=(255,255,254) rgb255(28cm)=(1,0,0)
+rgb255(42cm)=(0,0,0)}
+}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plots (1 surf & 2 contour)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tikzpicture}
+
+\begin{axis}[
+             width = {0.6\linewidth-\colorbartextwidth-\colorbarwidth+\axislabelshift-0.05cm},
+             ymin=-75,
+             ymax=-15,
+             ytick={-70,-60,-50,-40,-30,-20},
+             grid=major, 
+             axis on top,
+             colorbar,
+             colormap/viridis, 
+             mesh/ordering=x varies,
+             view={0}{90},
+             colorbar style={
+                             scaled ticks=false,
+                             ytick={-150,-125,...,0},
+                             width=\colorbarwidth,
+                             yticklabel style={
+                                               align=right,
+                                               text width = \colorbartextwidth,
+                                               },    
+                             xlabel = {$P_\mathrm{IF} /\textrm{\si{dBm}}$},   
+                             xlabel style = {xshift = 0.1875cm, yshift = {-0.51 cm +\axislabelshift},font=\small},  
+                             xshift = -0.3cm,  
+                             },
+             xlabel style = {yshift = \axislabelshift},   
+             ylabel style = {yshift = -\axislabelshift},    
+             tick label style={/pgf/number format/fixed},
+             enlargelimits=false,
+             xlabel={$v_\mathrm D \textrm{ in \si{\volt}}$}, 
+             ylabel={$P_\mathrm{RF} \textrm{ in \si{dBm}}$}, 
+             ]
+      \pgfplotstableset{skip first n = 1,}
+      \pgfplotstableread{\thispath/power_bias.txt}\datatable
+      
+            \addplot3[
+                     mesh/rows=13, 
+                     surf,  
+                     shader = interp,       
+                    ] table [
+                             x index = 1,
+                             y  index= 0,
+                             z index = 2,
+                            ]   from \datatable {};
+                            
+\pgfplotsset{filter discard warning=false,
+                        contour/every contour label/.style = {
+                          sloped,
+                          transform shape,
+                           every node/.style={
+                                              mapped color!90!white,
+                                              fill=none,
+                                              text opacity=0,
+                                              },
+                        },
+}
+            \addplot3[
+                     mesh/rows=13, 
+                     mesh/cols=31, 
+                     thin,
+                     colormap/hotsteep,
+                     contour gnuplot={
+                        levels={-100,-80,-60,-40,-30,-20},
+                     },
+                     contour/label distance=5500pt,
+                    ] table [
+                             x index = 1,
+                             y  index= 0,
+                             z index  = 2,
+                            ]   from \datatable {};
+                            
+              
+                            
+                            
+\begin{scope}
+\clip
+(axis cs:0.55,-75) -- (axis cs:0.55,-15) -- (axis cs:0.7,-15) -- (axis cs:0.7,-75) -- cycle;
+                            
+\pgfplotsset{filter discard warning=false,
+                        contour/every contour label/.style = {
+                          sloped,
+                          transform shape,
+                           every node/.style={
+                                              mapped color!90!white,
+                                              fill=none,
+                                              text opacity=1,
+                                              draw opacity=0,
+                                              },
+                        },
+}
+            \addplot3[
+                     mesh/rows=13, 
+                     thin,
+                     mesh/cols=31, 
+                     colormap/hotsteep,
+                     %colormap/PuBu-9,
+                     contour gnuplot={
+                        levels={-100,-80,-60,-40,-30,-20},
+                        contour label style={nodes={text=mapped color, text opacity=1,},font=\footnotesize},
+                     },
+                     contour/label distance=120pt,
+                     contour/labels over line,
+                     samples=200,
+                     %={
+                     % number=24,
+                     % % cdata should not be affected by z filter:
+                     % output point meta=rawz,
+                     % labels=false,
+                     %},
+                     %point meta = explicit,
+                    ] table [
+                             x index = 1,
+                             y  index= 0,
+                             z  index = 2,
+                             %meta expr = -\thisrowno{2},
+                            ]   from \datatable {};
+\end{scope}                            
+        %
+            
+\end{axis}
+\end{tikzpicture}

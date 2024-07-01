@@ -1,0 +1,70 @@
+%!TeX document-id = {1679cfad-a346-4abb-87ec-0886acad61ba}
+%!TEX program = lualatex
+%!BIB program = biber 
+
+\documentclass[a4paper,fleqn, headsepline, parskip=half, pagesize=dvips, twoside, final, openright, numbers=noenddot]{scrbook}
+\usepackage{hft-thesis}
+\graphicspath{{./Figures/}, {./Figures/pdf/}, {./Figures/png/}, {./Figures/pdf/loop/}, {./Figures/pdf/patch/}, {./Figures/pdf/resistor/}, 
+{./Figures/pdf/bpf/}, {./Figures/pdf/bpfs/}, {./Figures/pdf/wilkinson/}}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{pgfplots}
+%\usepackage[]{savetrees}
+\usepackage{float}
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+\newlength\figureheight
+\newlength\figurewidth
+\DeclareSIUnit{\belamperepermeter}{BA/m}
+\DeclareSIUnit{\dBApm}{\deci\belamperepermeter}
+\DeclareSIUnit{\belvoltpermeter}{BV/m}
+\DeclareSIUnit{\dBVpm}{\deci\belvoltpermeter}
+\usepackage{placeins}
+\usepackage[version=4]{mhchem}
+\usepackage{multirow}
+
+\begin{document} 
+
+	\pagenumbering{roman} 		% Römische Nummerierung 
+	% ------------------------------------------- Titelepage
+	
+	\input{MainMatter/I_Titlepage}
+
+	\cleardoublepage	
+
+	\input{MainMatter/II_Abstract}
+
+
+	% ------------------------------------------- Table of Contents
+	\tableofcontents
+	\cleardoublepage
+
+
+	% ------------------------------------------- Main Part
+	\pagenumbering{arabic} 		% arabic numbering in main part
+	\lehead{Chapter \headmark}  % style of header
+	
+	\input{MainMatter/III_Main}
+
+	\clearpage	
+	
+		
+	% ------------------------------------------- Appendices
+	\appendix
+	\lehead{Appendix \headmark} % style of header
+	
+	%\input{MainMatter/IV_Appendix}	
+	
+		
+	\clearpage
+		
+ 		
+	% ------------------------------------------- Bibliography
+	\lehead{\headmark}
+
+	\printbibliography 
+	\addcontentsline{toc}{chapter}{Bibliography}
+	
+
+
+\end{document}
+

@@ -1,0 +1,469 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{wittgenstein_tractatus_1999}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=3234c99a3eebf68ef7d42684cdb8ed8f}{%
+           family={Wittgenstein},
+           familyi={W\bibinitperiod},
+           given={Ludwig},
+           giveni={L\bibinitperiod}}}%
+        {{hash=627b78a05619005ae1ec2f98346323b2}{%
+           family={Ogden},
+           familyi={O\bibinitperiod},
+           given={Charles\bibnamedelima K.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=c58c42b6f7e7e1f78dbbdc65ed8e5384}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={Bertrand},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Mineola, NY}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publ}%
+      }
+      \strng{namehash}{c011467c0da0cfcba6979a141fc40d7a}
+      \strng{fullhash}{c011467c0da0cfcba6979a141fc40d7a}
+      \strng{fullhashraw}{c011467c0da0cfcba6979a141fc40d7a}
+      \strng{bibnamehash}{c011467c0da0cfcba6979a141fc40d7a}
+      \strng{authorbibnamehash}{c011467c0da0cfcba6979a141fc40d7a}
+      \strng{authornamehash}{c011467c0da0cfcba6979a141fc40d7a}
+      \strng{authorfullhash}{c011467c0da0cfcba6979a141fc40d7a}
+      \strng{authorfullhashraw}{c011467c0da0cfcba6979a141fc40d7a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Dover ed}
+      \field{langid}{english}
+      \field{pagetotal}{125}
+      \field{series}{Dover Books on Western Philosophy}
+      \field{title}{Tractatus Logico-Philosophicus}
+      \field{year}{1999}
+      \field{dateera}{ce}
+    \endentry
+    \entry{IEEEStyle}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=35b598a80ae584edfec83747760d0706}{%
+           family={{IEEE Periodicals, Transactions/Journals Department}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{35b598a80ae584edfec83747760d0706}
+      \strng{fullhash}{35b598a80ae584edfec83747760d0706}
+      \strng{fullhashraw}{35b598a80ae584edfec83747760d0706}
+      \strng{bibnamehash}{35b598a80ae584edfec83747760d0706}
+      \strng{authorbibnamehash}{35b598a80ae584edfec83747760d0706}
+      \strng{authornamehash}{35b598a80ae584edfec83747760d0706}
+      \strng{authorfullhash}{35b598a80ae584edfec83747760d0706}
+      \strng{authorfullhashraw}{35b598a80ae584edfec83747760d0706}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\linebreak\href{https://www.ieee.org/documents/style\_manual.pdf}{https://www.ieee.org/documents/style\_manual.pdf}}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{title}{{IEEE Editorial Style Manual}}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
+    \entry{_chicago_2017}{book}{}{}
+      \list{location}{1}{%
+        {Chicago ; London}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{edition}{Seventeenth edition}
+      \field{isbn}{978-0-226-28705-8}
+      \field{pagetotal}{1144}
+      \field{title}{The {{Chicago Manual}} of {{Style}}}
+      \field{year}{2017}
+      \field{dateera}{ce}
+    \endentry
+    \entry{merriam-websterinc_merriam_2014}{collection}{}{}
+      \name{editor}{1}{}{%
+        {{hash=21d9d131ff609b8547cc946373cfbdc8}{%
+           family={Merriam-Webster},
+           familyi={M\bibinithyphendelim W\bibinitperiod},
+           given={Inc},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Springfield}%
+      }
+      \list{publisher}{1}{%
+        {Merriam-Webster}%
+      }
+      \strng{namehash}{21d9d131ff609b8547cc946373cfbdc8}
+      \strng{fullhash}{21d9d131ff609b8547cc946373cfbdc8}
+      \strng{fullhashraw}{21d9d131ff609b8547cc946373cfbdc8}
+      \strng{bibnamehash}{21d9d131ff609b8547cc946373cfbdc8}
+      \strng{editorbibnamehash}{21d9d131ff609b8547cc946373cfbdc8}
+      \strng{editornamehash}{21d9d131ff609b8547cc946373cfbdc8}
+      \strng{editorfullhash}{21d9d131ff609b8547cc946373cfbdc8}
+      \strng{editorfullhashraw}{21d9d131ff609b8547cc946373cfbdc8}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{Eleventh edition}
+      \field{pagetotal}{1623}
+      \field{title}{Merriam {{Webster}}'s {{Collegiate Dictionary}}}
+      \field{year}{2014}
+      \field{dateera}{ce}
+    \endentry
+    \entry{detex}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=2005b6a75778a4e94d2ac469e0b82e6c}{%
+           family={Kühl},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0cfe605c22a41b044e61267e1f896fb3}{%
+           family={Kirsch},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{50c120a1a550d80442f15bc93abefa90}
+      \strng{fullhash}{50c120a1a550d80442f15bc93abefa90}
+      \strng{fullhashraw}{50c120a1a550d80442f15bc93abefa90}
+      \strng{bibnamehash}{50c120a1a550d80442f15bc93abefa90}
+      \strng{authorbibnamehash}{50c120a1a550d80442f15bc93abefa90}
+      \strng{authornamehash}{50c120a1a550d80442f15bc93abefa90}
+      \strng{authorfullhash}{50c120a1a550d80442f15bc93abefa90}
+      \strng{authorfullhashraw}{50c120a1a550d80442f15bc93abefa90}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\href{http://detexify.kirelabs.org/classify.html}{http://detexify.kirelabs.org/classify.html}}
+      \field{month}{1}
+      \field{title}{Detexify}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
+    \entry{moser_howtoequations_2017}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d8bfc247ff5fc482603a69ea3a412208}{%
+           family={{Moser, S. M.}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8bfc247ff5fc482603a69ea3a412208}
+      \strng{fullhash}{d8bfc247ff5fc482603a69ea3a412208}
+      \strng{fullhashraw}{d8bfc247ff5fc482603a69ea3a412208}
+      \strng{bibnamehash}{d8bfc247ff5fc482603a69ea3a412208}
+      \strng{authorbibnamehash}{d8bfc247ff5fc482603a69ea3a412208}
+      \strng{authornamehash}{d8bfc247ff5fc482603a69ea3a412208}
+      \strng{authorfullhash}{d8bfc247ff5fc482603a69ea3a412208}
+      \strng{authorfullhashraw}{d8bfc247ff5fc482603a69ea3a412208}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\href{http://moser-isi.ethz.ch/docs/typeset\_equations.pdf}{http://moser-isi.ethz.ch/docs/typeset\_equations.pdf}}
+      \field{month}{1}
+      \field{title}{{How to Typeset Equations in \LaTeX}}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
+    \entry{nadler_isokonform_2018}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1525f129d10ca8ade7bb6524f935364f}{%
+           family={{Nadler, M.}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1525f129d10ca8ade7bb6524f935364f}
+      \strng{fullhash}{1525f129d10ca8ade7bb6524f935364f}
+      \strng{fullhashraw}{1525f129d10ca8ade7bb6524f935364f}
+      \strng{bibnamehash}{1525f129d10ca8ade7bb6524f935364f}
+      \strng{authorbibnamehash}{1525f129d10ca8ade7bb6524f935364f}
+      \strng{authornamehash}{1525f129d10ca8ade7bb6524f935364f}
+      \strng{authorfullhash}{1525f129d10ca8ade7bb6524f935364f}
+      \strng{authorfullhashraw}{1525f129d10ca8ade7bb6524f935364f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\href{http://www.moritz-nadler.de/formelsatz.pdf}{http://www.moritz-nadler.de/formelsatz.pdf}}
+      \field{langid}{german}
+      \field{month}{1}
+      \field{title}{{ISO-31-konformer Formelsatz in \LaTeX}}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
+    \entry{quijano_3d_2010}{inproceedings}{}{}
+      \name{author}{8}{}{%
+        {{hash=01cf381f311870834834a50c4dbfc5fb}{%
+           family={Quijano},
+           familyi={Q\bibinitperiod},
+           given={JL\bibnamedelima Araque},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9fd88ee6d8301c7e648d650804ec155c}{%
+           family={Vecchi},
+           familyi={V\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4c305f909afd2192eedb6f46f0883d14}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=873d3fed36f8f21b89d287429e7bc0ce}{%
+           family={Sabbadini},
+           familyi={S\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b16035ac84ce15a7e359fd59f8c0df7b}{%
+           family={Scialacqua},
+           familyi={S\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4f897efc982aa5a1de7d4b4c251fb09d}{%
+           family={Bencivenga},
+           familyi={B\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7ca330c8605b094ccc4df0f7cdad68ee}{%
+           family={Mioc},
+           familyi={M\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8ad7cb29003a566cb745bf479c968e9b}{%
+           family={Foged},
+           familyi={F\bibinitperiod},
+           given={LJ},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Atlanta, USA}%
+      }
+      \strng{namehash}{fc47f8fa3b3c55523622e4001058b29c}
+      \strng{fullhash}{57ee12a369b61f54bbbae73e13d103ec}
+      \strng{fullhashraw}{57ee12a369b61f54bbbae73e13d103ec}
+      \strng{bibnamehash}{fc47f8fa3b3c55523622e4001058b29c}
+      \strng{authorbibnamehash}{fc47f8fa3b3c55523622e4001058b29c}
+      \strng{authornamehash}{fc47f8fa3b3c55523622e4001058b29c}
+      \strng{authorfullhash}{57ee12a369b61f54bbbae73e13d103ec}
+      \strng{authorfullhashraw}{57ee12a369b61f54bbbae73e13d103ec}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. 32nd {{Annu. Symp.}} {{Antenna Meas. Techn. Assoc.}} ({{AMTA}})}
+      \field{month}{10}
+      \field{title}{3D spatial filtering applications in spherical near field antenna measurements}
+      \field{year}{2010}
+      \field{dateera}{ce}
+    \endentry
+    \entry{russer_overview_2009}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=8dd8c0d7e50fcb4b673933c7d56c0a4a}{%
+           family={Russer},
+           familyi={R\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Torino, Italy}%
+      }
+      \strng{namehash}{8dd8c0d7e50fcb4b673933c7d56c0a4a}
+      \strng{fullhash}{8dd8c0d7e50fcb4b673933c7d56c0a4a}
+      \strng{fullhashraw}{8dd8c0d7e50fcb4b673933c7d56c0a4a}
+      \strng{bibnamehash}{8dd8c0d7e50fcb4b673933c7d56c0a4a}
+      \strng{authorbibnamehash}{8dd8c0d7e50fcb4b673933c7d56c0a4a}
+      \strng{authornamehash}{8dd8c0d7e50fcb4b673933c7d56c0a4a}
+      \strng{authorfullhash}{8dd8c0d7e50fcb4b673933c7d56c0a4a}
+      \strng{authorfullhashraw}{8dd8c0d7e50fcb4b673933c7d56c0a4a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. Int. Conf. Electromagn. Adv. Appl. (ICEAA)}
+      \field{month}{9}
+      \field{title}{Overview over network methods applied to electromagnetic field computation}
+      \field{year}{2009}
+      \field{pages}{276\bibrangedash 279}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ICEAA.2009.5297444
+      \endverb
+    \endentry
+    \entry{poljak_assessment_2003}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=45b6802d6561b013280598f65703610a}{%
+           family={Poljak},
+           familyi={P\bibinitperiod},
+           given={Dragan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6ba2059aacac32c9f30ee6e04cc51712}{%
+           family={Tham},
+           familyi={T\bibinitperiod},
+           given={Choy\bibnamedelima Yoong},
+           giveni={C\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=49438afeef9b8664d98a0e98533fcc6f}{%
+           family={Kovac},
+           familyi={K\bibinitperiod},
+           given={Niksa},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{cee8128aa25e5ec6f2426a3fe2cc611e}
+      \strng{fullhash}{cee8128aa25e5ec6f2426a3fe2cc611e}
+      \strng{fullhashraw}{cee8128aa25e5ec6f2426a3fe2cc611e}
+      \strng{bibnamehash}{cee8128aa25e5ec6f2426a3fe2cc611e}
+      \strng{authorbibnamehash}{cee8128aa25e5ec6f2426a3fe2cc611e}
+      \strng{authornamehash}{cee8128aa25e5ec6f2426a3fe2cc611e}
+      \strng{authorfullhash}{cee8128aa25e5ec6f2426a3fe2cc611e}
+      \strng{authorfullhashraw}{cee8128aa25e5ec6f2426a3fe2cc611e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09557997}
+      \field{journaltitle}{Eng. Anal. Bound. Elem.}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{note}{00016}
+      \field{number}{10}
+      \field{title}{The assessment of human exposure to low frequency and high frequency electromagnetic fields using the boundary element analysis}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2015}
+      \field{volume}{27}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{999\bibrangedash 1007}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/S0955-7997(03)00070-5
+      \endverb
+    \endentry
+    \entry{peterson_computational_1998}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=d40784d460fd2a8fb2178a54b52d2028}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Andrew\bibnamedelima F},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=3743a229478b90d39e80ceff35a0fba7}{%
+           family={Ray},
+           familyi={R\bibinitperiod},
+           given={Scott\bibnamedelima L},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=9513054d3e6e4a0ded9d823a4217e90c}{%
+           family={Mittra},
+           familyi={M\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {New York, NY: Wiley-IEEE Press}%
+      }
+      \strng{namehash}{1654d23017ef77208cbc28f21e945d16}
+      \strng{fullhash}{1654d23017ef77208cbc28f21e945d16}
+      \strng{fullhashraw}{1654d23017ef77208cbc28f21e945d16}
+      \strng{bibnamehash}{1654d23017ef77208cbc28f21e945d16}
+      \strng{authorbibnamehash}{1654d23017ef77208cbc28f21e945d16}
+      \strng{authornamehash}{1654d23017ef77208cbc28f21e945d16}
+      \strng{authorfullhash}{1654d23017ef77208cbc28f21e945d16}
+      \strng{authorfullhashraw}{1654d23017ef77208cbc28f21e945d16}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Computational Methods for Electromagnetics}}
+      \field{year}{1998}
+    \endentry
+    \entry{pozar_microwave_2011}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c3d8e666fc5a356e1abefe2a4fea5cad}{%
+           family={Pozar},
+           familyi={P\bibinitperiod},
+           given={D.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Hoboken, NJ: John Wiley \& Sons}%
+      }
+      \strng{namehash}{c3d8e666fc5a356e1abefe2a4fea5cad}
+      \strng{fullhash}{c3d8e666fc5a356e1abefe2a4fea5cad}
+      \strng{fullhashraw}{c3d8e666fc5a356e1abefe2a4fea5cad}
+      \strng{bibnamehash}{c3d8e666fc5a356e1abefe2a4fea5cad}
+      \strng{authorbibnamehash}{c3d8e666fc5a356e1abefe2a4fea5cad}
+      \strng{authornamehash}{c3d8e666fc5a356e1abefe2a4fea5cad}
+      \strng{authorfullhash}{c3d8e666fc5a356e1abefe2a4fea5cad}
+      \strng{authorfullhashraw}{c3d8e666fc5a356e1abefe2a4fea5cad}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{title}{{Microwave Engineering}}
+      \field{year}{2011}
+    \endentry
+    \entry{matthei_microwave_1980}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=850f3e5d13a86df73c0022fe1700e4a4}{%
+           family={Matthaei},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e7c453f6cfe25f894d1e8bb80b878681}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={E.\bibnamedelimi M.\bibnamedelimi T.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=591f7206cd8e4786293b6326f73e980e}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Norwood, MA: Artech House}%
+      }
+      \strng{namehash}{05bbf60c77a85a8c8f6add49badad9f4}
+      \strng{fullhash}{05bbf60c77a85a8c8f6add49badad9f4}
+      \strng{fullhashraw}{05bbf60c77a85a8c8f6add49badad9f4}
+      \strng{bibnamehash}{05bbf60c77a85a8c8f6add49badad9f4}
+      \strng{authorbibnamehash}{05bbf60c77a85a8c8f6add49badad9f4}
+      \strng{authornamehash}{05bbf60c77a85a8c8f6add49badad9f4}
+      \strng{authorfullhash}{05bbf60c77a85a8c8f6add49badad9f4}
+      \strng{authorfullhashraw}{05bbf60c77a85a8c8f6add49badad9f4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Microwave Filters, Impedance Matching Networks and Coupling Structures}}
+      \field{year}{1980}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

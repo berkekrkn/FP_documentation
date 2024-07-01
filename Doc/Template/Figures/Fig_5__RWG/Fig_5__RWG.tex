@@ -1,0 +1,123 @@
+
+%!TEX program = lualatex
+
+\documentclass[a4paper,fleqn, headsepline, parskip=half, pagesize=dvips, twoside, final, openright, numbers=noenddot]{scrbook}
+
+\usepackage{../../hft-thesis} % use same style as main document
+\usepackage{../MyFigureStyle} % supplements for images
+
+
+  
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\usepgfplotslibrary{colormaps}
+\pgfplotsset{colormap/hot2}
+
+
+\newcommand*{\arrowheadthreeD}[4]{%
+	\colorlet{beamcolor}{#1!75!black}
+	\colorlet{innercolor}{#1!50}
+	\foreach \i in {1, 0.9, ..., 0} { %% the step 1,0.9 defines the number of lines for the head. For bigger files with smoother transitions change to e.g. 0.99 
+		\pgfmathsetmacro{\shade}{\i*\i*100}
+		\pgfmathsetmacro{\startangle}{90-\i*30}
+		\pgfmathsetmacro{\endangle}{90+\i*30}
+		\fill[beamcolor!\shade!innercolor,shift={#2},rotate=#3,line width=0,line cap=butt,]%,
+		(0,0) -- (\startangle:0.259) arc (\startangle:\endangle:0.259)--cycle;
+	}
+	\fill[beamcolor,shift={#2},rotate=#3,line width=0,line cap=butt] (60:0.26) arc (60:120:0.26) -- (120:0.25) arc (120:60:0.25) -- cycle; 
+}
+
+\newcommand*{\arrowthreeD}[4]{
+	\begin{scope}[scale=#3,]
+		\fill [left color=#1!75!black,right color=#1!75!black,middle color=#1!50,join=round,line cap=round,line width=0,draw=none,shading angle=#4+90,,shift={(0,0.25)},rotate=180] (0,0.25) -- (0.05,0.25) -- (0.05,0.175+0.25) arc (0:180:0.05 and 0.05) -- (-0.05,0.25)--cycle;	  
+		\arrowheadthreeD{#1}{(0,0.25)}{180}{#3};
+	\end{scope}
+} 
+
+\makeatletter
+\def\pgfplotsplothandlerquiver@vis@path#1{%
+	#1%
+	\pgfmathsetmacro\pgfplots@quiver@x{\pgf@x}\global\let\pgfplots@quiver@x\pgfplots@quiver@x%
+	\pgfmathsetmacro\pgfplots@quiver@y{\pgf@y}\global\let\pgfplots@quiver@y\pgfplots@quiver@y%
+	\pgfplotsaxisvisphasetransformcoordinate\pgfplots@quiver@u\pgfplots@quiver@v\pgfplots@quiver@w%
+	\pgfplotsqpointxy{\pgfplots@quiver@u}{\pgfplots@quiver@v}%
+	\pgfmathsetmacro\pgfplots@quiver@u{\pgf@x-\pgfplots@quiver@x}%
+	\pgfmathsetmacro\pgfplots@quiver@v{\pgf@y-\pgfplots@quiver@y}%
+	\pgfmathparse{atan2(\pgfplots@quiver@v,\pgfplots@quiver@u)-90}
+	\pgfmathsetmacro\pgfplots@quiver@a{\pgfmathresult}\global\let\pgfplots@quiver@a\pgfplots@quiver@a%
+	{%
+		\pgftransformshift{\pgfpoint{\pgfplots@quiver@x}{\pgfplots@quiver@y}}%
+		\pgfpathmoveto{\pgfpointorigin}%
+		\pgfpathlineto{\pgfpoint\pgfplots@quiver@u\pgfplots@quiver@v}%
+	}%
+}%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Quiver plot (from data file)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{tikzpicture}
+\begin{axis}[
+width= 0.51\linewidth,
+scale only axis,
+legend style={font=\footnotesize },
+ymin=2, 
+ymax=6,
+xmin=3,
+xmax=5,
+axis equal image,
+clip=false,
+minor y tick num={1},
+minor x tick num={1},
+yticklabels={},
+xticklabels={},
+grid=none,
+colormap={cropped hot2}{
+	indices of colormap={
+		0,...,6.5 of hot2}
+},
+]
+
+% MSH
+\draw[gray,join=round,line cap=round,]  (5,4) -- (4,2) -- (3,4) ;
+\draw[gray,join=round,line cap=round,]          (5,4) -- (4,6) -- (3,4) ;
+
+\draw[gray,join=round,line cap=round,] (3,4) -- (5,4);
+
+
+
+\addplot[join=round,line cap=round,very thin,
+point meta={\thisrow{meta}},
+point meta min=0,
+quiver={u=\thisrow{u},
+	v=\thisrow{v},
+	every arrow/.append style={%
+		draw=none,
+	},
+	after arrow/.code={
+		\relax{
+			\pgftransformshift{\pgfpoint{\pgfplots@quiver@x}{\pgfplots@quiver@y}}%
+			\pgftransformrotate{\pgfplots@quiver@a}%
+			\arrowthreeD{mapped color}{0,0}{sqrt{\pgfplotspointmetatransformed}/30}{\pgfplots@quiver@a}
+		}
+	}
+},
+] table {rwg_quiver.txt};
+\end{axis}
+\end{tikzpicture} 
+
+
+
+\end{document}
+
+

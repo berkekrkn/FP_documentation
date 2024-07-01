@@ -1,0 +1,80 @@
+
+%!TEX program = lualatex
+
+\documentclass[a4paper,fleqn, headsepline, parskip=half, pagesize=dvips, twoside, final, openright, numbers=noenddot]{scrbook}
+
+\usepackage{../../hft-thesis} % use same style as main document
+\usepackage{../MyFigureStyle} % supplements for images
+
+
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=7.037cm,
+height=6cm,
+at={(0cm,0cm)},
+scale only axis,
+xmin=0,
+xmax=10000,
+xlabel={Number of unknowns},
+xmajorgrids,
+ymin=-200,
+ymax=6000,
+ylabel={Number of iterations used by CGS},
+ymajorgrids,
+axis background/.style={fill=white},
+legend style={at={(0.03,0.97)},anchor=north west,legend cell align=left,align=left,draw=white!15!black}
+]
+\addplot [color=mycolor1,solid,line width=2.0pt,mark=o,mark options={solid}]
+table[row sep=crcr]{%
+	264	84\\
+	528	271\\
+	1104	469\\
+	1424	560\\
+	2208	889\\
+	4512	1237\\
+	5824	1585\\
+	9024	3316\\
+}; 
+\addlegendentry{Loop-Star preconditioner};
+
+\addplot [color=mycolor2,solid,line width=2.0pt,mark=x,mark options={solid}]
+table[row sep=crcr]{%
+	264	76\\
+	528	89\\
+	1104	313\\
+	1424	223\\
+	2208	231\\
+	4512	498\\
+	5824	493\\
+	9024	652\\
+};
+\addlegendentry{$\mat M$ preconditioner};
+
+\addplot [color=mycolor3,solid,line width=2.0pt,mark=square,mark options={solid}]
+table[row sep=crcr]{%
+	264	8\\
+	528	7\\
+	1104	9\\
+	1424	10\\
+	2208	8\\
+	4512	11\\
+	5824	10\\
+	9024	8\\
+};
+\addlegendentry{$\mat N \mat N^\T$ preconditioner};
+
+\end{axis}
+\end{tikzpicture}%
+
+
+\end{document}
+
+

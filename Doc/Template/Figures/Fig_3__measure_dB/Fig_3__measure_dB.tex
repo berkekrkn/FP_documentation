@@ -1,0 +1,50 @@
+
+%!TEX program = lualatex
+
+\documentclass[a4paper,fleqn, headsepline, parskip=half, pagesize=dvips, twoside, final, openright, numbers=noenddot]{scrbook}
+
+\usepackage{../../hft-thesis} % use same style as main document
+\usepackage{../MyFigureStyle} % supplements for images
+
+
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+\begin{tikzpicture}
+\begin{axis}[ 
+width= 0.8\linewidth,
+height= 0.4\linewidth,
+ymin=-30, 
+ymax=0,
+xmin=32,
+xmax=40,
+xlabel={Frequency $f \textrm{ in \SI{}{\giga\hertz}}$},
+ylabel={Reflection coefficient $S_{11} \textrm{ in \SI{}{\decibel}}$},
+grid=both,
+legend pos=south west,  
+]
+
+\pgfplotstableread{./C132_copy.S1P}\datatable
+\addplot[color=blue!70!black,mark=none,very thick,join=round] table [x expr = \thisrow{freq}/1e9, y  = dbS22]   from \datatable {};
+
+% for fluttering curves (e.g. measurement data): do *NOT* use the option smooth. Instead, use the option join=round.
+
+\pgfplotstableset{skip first n=8} 
+\pgfplotstableread{./firstsimulated.s1p}\datatable
+\addplot[color=red,mark=none,very thick,smooth,densely dashed] table [x=0, y index = 1]   from \datatable {};
+
+\addlegendentry{Measurement} 
+\addlegendentry{Simulation}
+
+
+\end{axis}
+\end{tikzpicture} 
+
+
+\end{document}
+
+

@@ -1,0 +1,373 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% GENERAL LAYOUT                                                  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[ngerman,english]{babel}
+
+
+\RequirePackage{geometry}
+\addtokomafont{disposition}{\boldmath} 																	% Damit Matheformeln in Überschriften auch fett gedruckt werden
+\geometry{a4paper, tmargin=30mm, bmargin=35mm, lmargin=25mm, rmargin=25mm, bindingoffset=0mm}
+
+
+\RequirePackage[automark]{scrlayer-scrpage}
+\automark[section]{chapter}
+\pagestyle{scrheadings}
+
+
+\RequirePackage[
+hidelinks,
+linktoc=all,
+pdfauthor={Winnie-the-Pooh},
+bookmarks=true,           	% breaklinks, 
+]{hyperref}
+
+
+
+\RequirePackage{setspace}  	% Zum Einstellen des Zeilenabstands
+%\onehalfspacing 			% Eineinhalbfacher Zeilenabstand -> Fußnoten nicht beeinflusst
+%\singlespacing  			% für einfachen Abstand (kann an beliebiger Stelle eingefügt werden)
+%\linespread{1.5}  			% erhöht global den Zeilenabstand, auch für Fußnoten
+
+\setlength{\headheight}{1.1\baselineskip}					% Kopfzeile nach unten verschieben		
+
+\RequirePackage[numbered]{bookmark}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SYMBOLS                                                         %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% We have to load the symbols before the fonts and math stuff
+\RequirePackage{wasysym}
+\let\iint\relax    % let amsmath override them
+\let\iiint\relax   
+
+% This is for the "difficultities" feature in hft-tutorial
+\RequirePackage{manfnt}
+
+% this is for a “blank” symbol
+\newcommand\Vtextvisiblespace[1][.3em]{%
+	\mbox{\kern.06em\vrule height.3ex}%
+	\vbox{\hrule width#1}
+	\hbox{\vrule height.3ex}}
+
+\RequirePackage{amsthm}
+\RequirePackage[]{libertinust1math}
+\RequirePackage[no-math]{fontspec}
+\setmainfont[Mapping=tex-text, Ligatures={TeX,Required, Contextual, Common, Rare, Discretionary}]{Linux Libertine O}
+\setsansfont[Ligatures={TeX,Required, Contextual, Common, Rare, Discretionary}]{Libertinus Sans}
+\RequirePackage[cal=cm, bb=ams, calscaled=.95,bbscaled=.95]{mathalfa}
+% Just as for the MinionPro: We do not load amssymb and amsfont
+%\provideboolean{bool-minion} 
+%\setboolean{bool-minion}{true}
+%Legacy
+%\renewcommand{\bm}{\mathbfit}
+%\renewcommand{\mathbfsf}{\mathsfbf}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FIGURES                                                         %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{subcaption}
+\RequirePackage{tikz}
+\usetikzlibrary{calc,positioning}
+\usetikzlibrary{arrows}
+
+% For footnotes in floating enviroments
+\RequirePackage{footmisc}
+
+\DeclareGraphicsExtensions{.eps, .pdf}
+\graphicspath{{./Figures/}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TABLES                                                          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{array}         % extensions for tables
+
+\RequirePackage{booktabs}      % extensions for tables
+
+\RequirePackage{supertabular}  % Tables extending on more than one page
+\RequirePackage{longtable}     % tables extending on more than one page
+
+\RequirePackage{colortbl}      % use colors in tables
+
+\RequirePackage{dcolumn}       % column in tabular/array aligned on the 'decimal point'
+
+\RequirePackage{rotating}      % rotate text in cells
+
+\RequirePackage{tabto}         % tabular environment
+
+\RequirePackage{ltablex} %combines suptertabular and longtable
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% EXTRA TABLE COMMANDS                                            %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcolumntype {n}{c}
+\newcolumntype {N}{>{\small}c}
+\newcolumntype {L}{>{\small}l}
+\newcolumntype {F}{>{\footnotesize}c}
+\newcolumntype {v}[1]{>{\raggedright \hspace {0pt}} p {#1}}
+\newcolumntype {V}[1]{>{\small \raggedright \hspace {0pt}} p {#1}}
+\newcolumntype{d}[1]{>{\DC@{.}{.}{#1}}c<{\DC@end}}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% IEEEtrantools                                                   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage[retainorgcmds]{IEEEtrantools}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Title Page                                                      %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{xcolor}
+
+% from TUM corporate design
+\definecolor{TUMBlau}{RGB}{0,101,189} % Pantone 300
+\definecolor{TUMBlauDunkel}{RGB}{0,82,147} % Pantone 301
+\definecolor{TUMBlauHell}{RGB}{152,198,234} % Pantone 283
+\definecolor{TUMBlauMittel}{RGB}{100,160,200} % Pantone 542
+
+
+
+% Improved justification
+\RequirePackage{ragged2e}
+
+
+% for setstretch
+\RequirePackage{setspace}
+
+% for calculating with units
+\RequirePackage{calc}
+
+
+\newcommand{\UniversitaetLogoBreite}{19mm}
+\newcommand{\UniversitaetLogoHoehe}{1cm}
+
+\newcommand{\hftheader}{
+	\setlength{\parindent}{0cm} 
+	\begin{center}
+		\begin{minipage}[l]{\textwidth-\UniversitaetLogoBreite}
+			{\setstretch{0.9} \footnotesize \color{TUMBlau}
+				{\fontfamily{cmr}\selectfont \small
+					\textsf{Lehrstuhl für Hochfrequenztechnik\\
+						Fakultät für Elektrotechnik und Informationstechnik\\
+						Technische Universität München}\par}
+			}
+		\end{minipage}%
+		\begin{minipage}[r]{\UniversitaetLogoBreite} % offical size of TUM logo
+			%  			\ifcase\@graphics
+			%  			\includegraphics[width=\textwidth]{./Figures/Universitaet_Logo_RGB.pdf}
+			% 		\or
+			\includegraphics[width=\textwidth]{../Figures/TUM_Logo_Web.pdf}
+			%   		\fi
+		\end{minipage}%
+	\end{center}%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BIBLIOGRAPHY                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\RequirePackage[style=ieee, backend=biber, url=true, isbn=false, doi=false]{biblatex}
+\addbibresource{Literature.bib}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% MATH                                                            %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage[]{isomath}
+\RequirePackage{bm}
+\RequirePackage{siunitx} % Angabe von Einheiten
+
+\RequirePackage{color} 
+
+\RequirePackage{amssymb}  
+\RequirePackage{amsmath}
+\RequirePackage[ngerman]{cleveref}
+\RequirePackage{relsize}
+
+%\RequirePackage{upgreek}
+\RequirePackage{bm}
+
+%\RequirePackage{esvect}
+
+
+\newcommand*{\defeq}{\mathrel{\vcenter{\baselineskip0.5ex \lineskiplimit0pt            % für das Zeichen:           :=
+                     \hbox{\scriptsize.}\hbox{\scriptsize.}}}%
+                     =}
+
+
+%%%%%%%%%%%%%%%%%%%%%%% Abstand vor Klammern verringern:
+\let\originalleft\left
+\let\originalright\right
+\def\left#1{\mathopen{}\originalleft#1}
+\def\right#1{\originalright#1\mathclose{}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%% eigene Mathe-Kommandos
+\newcommand{\rem}[1]{}
+\setcounter{MaxMatrixCols}{63}
+\newcommand{\M}[1]{\begin{bmatrix} #1 \end{bmatrix}} %matrix		
+
+
+\newcommand{\mat}[1]{\mathsfbfit{#1}} % n x n-dimensional matrix
+\newcommand{\T}{\mathrm{T}}
+\newcommand{\wt}[1]{{\widetilde{#1}}}
+
+\newcommand{\veg}[1]{\mathbfit{#1}}     % geometrical / physical vectors
+\newcommand{\vet}[1]{\bm{ \mathfrak{#1}}}    % I used it for physical vectors with time-dependency
+\newcommand{\uv}[1]{\hat{\veg{#1}}} % unit vectors
+%\renewcommand{\vec}[1]{\mathsfbfit{#1}} %n-dimensional vector
+\newcommand{\op}[1]{\mathcal{#1}} % operator that takes a scalar-valued function
+\newcommand{\vecop}[1]{\mathbcal{#1}} % operator that takes a vector-valued function
+\newcommand{\mel}[1]{\mathsfit{#1}} 
+\newcommand{\vel}[1]{\mathsfit{#1}}
+\newcommand{\matel}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\vecel}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\D}{\mathrm{D}}
+
+% Special matrices
+%\newcommand{\matI}{\mathbfsf{I}}
+\newcommand{\matI}{\mat I}
+\newcommand{\matO}{\mathbfsf{0}}
+\newcommand{\vecO}{\matO}
+\newcommand{\vecI}{\mathbfsf{1}}
+
+% Some special operators
+\newcommand{\Laplace}{\Deltaup}
+\newcommand{\Hodge}{\mathbf{\Delta}}
+
+% Special geometrical vectors (mainly normals and unit vectors etc.)
+\newcommand{\n}{\hat{\bm{n}}} 
+\newcommand{\np}{\hat{\bm{n}}^\prime}  
+\newcommand{\pn}{\partial_{\hat{\bm{n}}}} 
+\newcommand{\pnp}{\partial_{\hat{\bm{n}}^\prime}}  
+\newcommand{\pnnp}{\partial_{\hat{\bm{n}},\hat{\bm{n}}^\prime}}    
+\newcommand{\hek}{\hat{\bm{e}}_k}
+
+% Real and imaginary part
+\renewcommand{\Re}{\mathrm{Re}\;}
+\renewcommand{\Im}{\mathrm{Im}\;}
+
+% Differential symbol
+\newcommand{\dd}{\mathrm{d}}  % The differential symbol is actually an operator
+
+% Differential fractions
+\newcommand{\ntfrac}[2]{\frac{\nt{#1}}{\nt{#2}}}  % partielles Differential
+\newcommand{\pfrac}[2]{\frac{\uppartial #1}{\uppartial #2}}  % partielles Differential
+\newcommand{\fracpd}[2]{\frac{\uppartial #1}{\uppartial #2}} % partielles Differential
+\newcommand{\fracppd}[2]{\frac{\uppartial^2 #1}{\uppartial #2^2}}  % zweite partielle 
+\newcommand{\fracd}[2]{\frac{\dd#1}{\dd #2}} % partielles Differential
+\newcommand{\fracdd}[2]{\frac{\dd^2 #1}{\dd#2^2}}  % zweite partielle 
+
+% Imaginary unit
+\newcommand{\ii}{\mathrm{i}}   % For mathematicians and backwards compatibility
+\newcommand{\im}{\mathrm{i}}  % For mathematician, Julia notation
+\newcommand{\jm}{\mathrm{j}}  % For engineer stuff 
+
+% Other math constants
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\sg}{\varsigma}
+
+% Blackboard font: for special sets
+\newcommand{\bbone}{\mathds{1}}  % mathds benötigt das Package "dsfont"
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+% Norms
+\RequirePackage{mathtools}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+%\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\newcommand{\pair}[2]{\langle #1, #2 \rangle}
+
+% Math operators: analytic
+\DeclareMathOperator{\laplace}{\upDelta}
+\DeclareMathOperator{\dirac}{\updelta}
+\DeclareMathOperator{\dalembert}{\square}
+\DeclareMathOperator{\ee}{e}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\tanc}{tanc}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\cond}{cond}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\curl}{curl}
+\DeclareMathOperator{\Rang}{Rang}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Null}{null}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\tr}{trace}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Eig}{Eig}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\ran}{ran}
+\DeclareMathOperator{\Span}{span}
+%\newcommand{\vcurl}{\text{\textbf{curl}}}
+\DeclareMathOperator{\vcurl}{\mathbf{curl}}
+% Math operators: linear algebra
+\newcommand{\Ht}{\dagger}
+
+% Math operators: special functions
+\newcommand{\bJ}{\operatorname{J}}
+\newcommand{\bH}{\operatorname{H}}
+\newcommand{\bN}{\operatorname{N}}
+
+% Math operation: restrain
+\newcommand\restr[2]{{% we make the whole thing an ordinary symbol
+		\left.\kern-\nulldelimiterspace % automatically resize the bar with \right
+		#1 % the function
+		\vphantom{|} % pretend it's a little taller at normal size
+		\right|_{#2} % this is the delimiter
+}}
+
+
+\newcommand\rst[3]{{% we make the whole thing an ordinary symbol
+		\left.\kern-\nulldelimiterspace % automatically resize the bar with \right
+		#1 % the function
+		\vphantom{|} % pretend it's a little taller at normal size
+		\right|_{#2}^{#3} % this is the delimiter
+}}
+
+% Fourier transformations
+\newcommand{\FT}{\cF}
+\newcommand{\FTa}[1]{\cF\left[#1\right]}
+\newcommand{\FTi}{\cF^{-1}}
+\newcommand{\FTia}[1]{\cF^{-1}\left[#1\right]}
+\newcommand{\mr}{\mathrm}
+\newcommand{\ms}{\mathsf}
+\newcommand{\mc}{\mathcal}
+

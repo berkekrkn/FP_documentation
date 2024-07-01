@@ -1,0 +1,17 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'TemplateThesis.blg'
+[263] biber-MSWIN64:340> INFO - === 
+[323] Biber.pm:420> INFO - Reading 'TemplateThesis.bcf'
+[493] Biber.pm:994> INFO - Found 13 citekeys in bib section 0
+[517] Biber.pm:4463> INFO - Processing section 0
+[538] Biber.pm:4654> INFO - Looking for bibtex file 'Literature.bib' for section 0
+[639] bibtex.pm:1713> INFO - LaTeX decoding ...
+[701] bibtex.pm:1519> INFO - Found BibTeX data source 'Literature.bib'
+[933] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[934] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[934] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[935] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[949] bbl.pm:676> INFO - Writing 'TemplateThesis.bbl' with encoding 'UTF-8'
+[961] bbl.pm:779> INFO - Output to TemplateThesis.bbl
+[962] Biber.pm:131> WARN - legacy month field 'Sep' in entry 'russer_overview_2009' is not an integer - this will probably not sort properly.
+[962] Biber.pm:133> INFO - WARNINGS: 1

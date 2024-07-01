@@ -1,0 +1,52 @@
+
+
+
+   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PLOTS                                                           %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\RequirePackage{graphicx}
+
+% For color usage  
+\RequirePackage{xcolor}
+
+\RequirePackage{pgfplots}
+\pgfplotsset{compat=newest}
+\pgfplotsset{compat/show suggested version=false}
+%\pgfplotsset{plot coordinates/math parser=false} %% KOJO commented out for quiver plot.
+\pgfplotsset{every tick label/.append style={font=\small}} % Matching caption size
+\pgfplotsset{every axis label/.append style={font=\small}} % maybe there exists some variable (e.g. \captionfontsize) to use here?
+% TODO for IEEEtran -> \footnotesize in axis, legend and label
+\newlength\figureheight
+\newlength\figurewidth
+
+\RequirePackage{pgfplotstable} % For reading data files and other stuff
+
+\usepgfplotslibrary{smithchart}
+
+
+\RequirePackage[straightvoltages,europeanvoltages,europeanresistors,americaninductors]{circuitikz}
+\RequirePackage{nicefrac}
+\usetikzlibrary{shapes.geometric}
+
+ 
+\usepgfplotslibrary{polar}   
+%\pgfplotsset{compat=1.13}
+
+\usetikzlibrary{angles,quotes,babel}
+\usetikzlibrary{patterns}
+\usetikzlibrary{arrows}
+\usetikzlibrary{backgrounds}
+
+\tikzstyle{myDot}=[circle,draw,fill,minimum size=1.5mm,inner sep=0pt]
+\tikzstyle{myClamp}=[circle,draw,fill=white,thick,minimum size=2mm,inner sep=0pt]
+
+
+
+
+
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+%

@@ -1,0 +1,29 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Abstract}{iii}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}The Imperative of Scientific Writing}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Grammar and Spelling}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Typography}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Fonts}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Figures}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Tables}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Micro Typography and Related \LaTeX \ Macros}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Lists}{13}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Style of Writing}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Cohesion and Coherence}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Weasel Words}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}On the Usage of ``We'' and ``I''}{16}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Mathematical Writing}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Equations}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}On the Notation of Variables, Constants and Subscripts}{21}{section.5.2}%
+\contentsline {section}{\numberline {5.3}On the Notation of Matrices and (Physical) Vectors}{22}{section.5.3}%
+\contentsline {section}{\numberline {5.4}On the Notation of Units}{23}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Structure of an Article or Thesis}{25}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Title}{25}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Abstract}{25}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Introduction}{25}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Theory}{27}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Results}{27}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Conclusions}{28}{section.6.6}%
+\contentsline {section}{\numberline {6.7}References and How to Cite}{28}{section.6.7}%
+\contentsline {chapter}{Bibliography}{31}{chapter*.12}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

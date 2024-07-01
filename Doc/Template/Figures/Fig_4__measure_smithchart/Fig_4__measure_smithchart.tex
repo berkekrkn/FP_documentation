@@ -1,0 +1,72 @@
+
+%!TEX program = lualatex
+
+\documentclass[a4paper,fleqn, headsepline, parskip=half, pagesize=dvips, twoside, final, openright, numbers=noenddot]{scrbook}
+
+\usepackage{../../hft-thesis} % use same style as main document
+\usepackage{../MyFigureStyle} % supplements for images
+
+
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\pgfplotsset{select coords between index/.style 2 args={
+		x filter/.code={
+			\ifnum\coordindex<#1\def\pgfmathresult{}\fi
+			\ifnum\coordindex>#2\def\pgfmathresult{}\fi
+		}
+}}
+
+\begin{tikzpicture}
+\begin{smithchart}[
+show origin,
+height=0.46\linewidth ,
+yticklabels={,,},
+xticklabels={,,}, 
+clip = false,
+filter discard warning=false,                       
+]
+
+\pgfplotstableread{C132_copy.S1P-processed.txt}\datatable  
+\pgfplotstablegetrowsof{\datatable}    
+\pgfmathparse{\pgfplotsretval-1}
+\pgfmathsetmacro\nrows{\pgfmathresult} 
+\addplot[mark=none,blue,thick,join=round] table[ x = Re, y = Im]
+from \datatable{};
+\addplot[mark=*,mark options={scale=1, fill=white},blue,thick,select coords between index={0}{0}] table[ x = Re, y = Im]
+from \datatable{};
+\addplot[mark=*,mark options={fill=blue},blue,thick,select coords between index={\nrows}{\nrows}] table[ x = Re, y = Im]
+from \datatable{}; 
+
+
+\pgfplotstableread{firstsimulated.s1p-processed.txt}\datatableB  
+\pgfplotstablegetrowsof{\datatableB}    
+\pgfmathparse{\pgfplotsretval-1}
+\pgfmathsetmacro\mrows{\pgfmathresult}
+\addplot[mark=none,red,thick] table[ x = Re, y = Im]
+from \datatableB{};
+\addplot[mark=*,mark options={scale=1,fill=white},red,thick,select coords between index={0}{0}] table[ x = Re, y = Im]
+from \datatableB{};
+\addplot[mark=*,mark options={fill=red},red,thick,select coords between index={\mrows}{\mrows}] table[ x = Re, y = Im]
+from \datatableB{}; 
+
+
+ 
+
+
+\pgfplotsset{
+	after end axis/.code={
+		\begin{scope}[yshift=-0.89cm]
+		\node[below=0.133\linewidth] (axis cs:0,0) {\tikz[baseline=-0.5ex]{ \draw[o-,blue,thick] (0,0) -- (2ex,0);} $\SI{33}{\giga\hertz}$, \tikz[baseline=-0.5ex]{ \draw[*-,red,thick] (0,0) -- (2ex,0);} $\SI{40}{\giga\hertz}$, $Z_0=\SI{50}{\Omega}$};
+		\end{scope}
+}}
+\end{smithchart}
+\end{tikzpicture} 
+
+
+\end{document}
+
+

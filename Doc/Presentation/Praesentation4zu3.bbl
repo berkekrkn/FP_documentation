@@ -1,0 +1,691 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{381063}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=bef5da396d2334d5ae0c8d020629cb55}{%
+           family={Gunalp},
+           familyi={G\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=641c3d9c81acf02e481f30df128c31ef}{%
+           family={Ozet},
+           familyi={O\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b05e1d7446f2653a16714315e8064f4}
+      \strng{fullhash}{5b05e1d7446f2653a16714315e8064f4}
+      \strng{fullhashraw}{5b05e1d7446f2653a16714315e8064f4}
+      \strng{bibnamehash}{5b05e1d7446f2653a16714315e8064f4}
+      \strng{authorbibnamehash}{5b05e1d7446f2653a16714315e8064f4}
+      \strng{authornamehash}{5b05e1d7446f2653a16714315e8064f4}
+      \strng{authorfullhash}{5b05e1d7446f2653a16714315e8064f4}
+      \strng{authorfullhashraw}{5b05e1d7446f2653a16714315e8064f4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of MELECON '94. Mediterranean Electrotechnical Conference}
+      \field{title}{Two-dimensional electromagnetic inverse scattering solutions by a sine-basis moment method}
+      \field{year}{1994}
+      \field{pages}{442\bibrangedash 445 vol.2}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/MELCON.1994.381063
+      \endverb
+      \keyw{Electromagnetic scattering;Inverse problems;Moment methods;Acoustic scattering;Acoustic testing;Acoustic pulses;Biomedical acoustics;Dielectrics;Integral equations;Laboratories}
+    \endentry
+    \entry{4812237}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=187f734d83455337adb74192c8e7cf01}{%
+           family={Eibert},
+           familyi={E\bibinitperiod},
+           given={Thomas\bibnamedelima F.},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=7212590d10e1fe42ea55ef5daf3ad53b}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Carsten\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{054d94c0c24920732d06676be435e50f}
+      \strng{fullhash}{054d94c0c24920732d06676be435e50f}
+      \strng{fullhashraw}{054d94c0c24920732d06676be435e50f}
+      \strng{bibnamehash}{054d94c0c24920732d06676be435e50f}
+      \strng{authorbibnamehash}{054d94c0c24920732d06676be435e50f}
+      \strng{authornamehash}{054d94c0c24920732d06676be435e50f}
+      \strng{authorfullhash}{054d94c0c24920732d06676be435e50f}
+      \strng{authorfullhashraw}{054d94c0c24920732d06676be435e50f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Antennas and Propagation}
+      \field{number}{4}
+      \field{title}{Multilevel Fast Multipole Accelerated Inverse Equivalent Current Method Employing Rao–Wilton–Glisson Discretization of Electric and Magnetic Surface Currents}
+      \field{volume}{57}
+      \field{year}{2009}
+      \field{pages}{1178\bibrangedash 1185}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/TAP.2009.2015828
+      \endverb
+      \keyw{Acceleration;Antenna measurements;Noise measurement;Wavelength measurement;Directive antennas;Magnetic field measurement;Current measurement;Integral equations;Eigenvalues and eigenfunctions;Shape measurement;Antenna measurements;fault diagnosis;integral equations;inverse problems}
+    \endentry
+    \entry{8293221}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=8e5f1583c02e3784a85f10d182b2eac8}{%
+           family={Gür},
+           familyi={G\bibinitperiod},
+           given={U.\bibnamedelimi M.},
+           giveni={U\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9bff56aca1e1ed5d6114a372ee8e5bc0}{%
+           family={Ergül},
+           familyi={E\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3b04f77f63392ab5b005518b3989fc5}
+      \strng{fullhash}{f3b04f77f63392ab5b005518b3989fc5}
+      \strng{fullhashraw}{f3b04f77f63392ab5b005518b3989fc5}
+      \strng{bibnamehash}{f3b04f77f63392ab5b005518b3989fc5}
+      \strng{authorbibnamehash}{f3b04f77f63392ab5b005518b3989fc5}
+      \strng{authornamehash}{f3b04f77f63392ab5b005518b3989fc5}
+      \strng{authorfullhash}{f3b04f77f63392ab5b005518b3989fc5}
+      \strng{authorfullhashraw}{f3b04f77f63392ab5b005518b3989fc5}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 Progress in Electromagnetics Research Symposium - Fall (PIERS - FALL)}
+      \field{title}{Low-frequency breakdown of the potential integral equations and its remedy}
+      \field{year}{2017}
+      \field{pages}{676\bibrangedash 682}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/PIERS-FALL.2017.8293221
+      \endverb
+      \keyw{Current density;Electric breakdown;Electric potential;Integral equations;Electric fields;Scattering}
+    \endentry
+    \entry{nagaoka}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9b237999cea4eb51604f2ff2faa1ce27}{%
+           family={Nagaoka},
+           familyi={N\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b237999cea4eb51604f2ff2faa1ce27}
+      \strng{fullhash}{9b237999cea4eb51604f2ff2faa1ce27}
+      \strng{fullhashraw}{9b237999cea4eb51604f2ff2faa1ce27}
+      \strng{bibnamehash}{9b237999cea4eb51604f2ff2faa1ce27}
+      \strng{authorbibnamehash}{9b237999cea4eb51604f2ff2faa1ce27}
+      \strng{authornamehash}{9b237999cea4eb51604f2ff2faa1ce27}
+      \strng{authorfullhash}{9b237999cea4eb51604f2ff2faa1ce27}
+      \strng{authorfullhashraw}{9b237999cea4eb51604f2ff2faa1ce27}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of the College of Science, Imperial University of Tokyo, Japan}
+      \field{title}{The Inductance Coefficients of Solenoids}
+      \field{volume}{27}
+      \field{year}{1909}
+      \field{pages}{1\bibrangedash 33}
+      \range{pages}{33}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:107364631
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:107364631
+      \endverb
+    \endentry
+    \entry{rosa}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=7a93c8279a9922c48f0604917886c8c1}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={E.B.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=fef38b68ec8b107a76ec2cdcc8bf6952}{%
+           family={Grover},
+           familyi={G\bibinitperiod},
+           given={F.W.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {U.S. Government Printing Office}%
+      }
+      \strng{namehash}{18d8f6e37cb32c5e0745af24995e5860}
+      \strng{fullhash}{18d8f6e37cb32c5e0745af24995e5860}
+      \strng{fullhashraw}{18d8f6e37cb32c5e0745af24995e5860}
+      \strng{bibnamehash}{18d8f6e37cb32c5e0745af24995e5860}
+      \strng{authorbibnamehash}{18d8f6e37cb32c5e0745af24995e5860}
+      \strng{authornamehash}{18d8f6e37cb32c5e0745af24995e5860}
+      \strng{authorfullhash}{18d8f6e37cb32c5e0745af24995e5860}
+      \strng{authorfullhashraw}{18d8f6e37cb32c5e0745af24995e5860}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Scientific papers of the Bureau of Standards}
+      \field{title}{Formulas and Tables for the Calculation of Mutual and Self-inductance}
+      \field{year}{1948}
+    \endentry
+    \entry{medhurst}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2c03b1577134f339859781dee663009e}{%
+           family={Medhurst},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c03b1577134f339859781dee663009e}
+      \strng{fullhash}{2c03b1577134f339859781dee663009e}
+      \strng{fullhashraw}{2c03b1577134f339859781dee663009e}
+      \strng{bibnamehash}{2c03b1577134f339859781dee663009e}
+      \strng{authorbibnamehash}{2c03b1577134f339859781dee663009e}
+      \strng{authornamehash}{2c03b1577134f339859781dee663009e}
+      \strng{authorfullhash}{2c03b1577134f339859781dee663009e}
+      \strng{authorfullhashraw}{2c03b1577134f339859781dee663009e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wireless Engineer}
+      \field{title}{H.{F}. resistance and self-capacitance of single-layer solenoids}
+      \field{volume}{24}
+      \field{year}{1947}
+      \field{pages}{35\bibrangedash 43\bibrangessep 80\bibrangedash 92}
+      \range{pages}{22}
+    \endentry
+    \entry{snelling}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=8f7e1a9d9d8aee70dccc80adbb5b18dc}{%
+           family={Snelling},
+           familyi={S\bibinitperiod},
+           given={E.\bibnamedelimi C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Iliffe}%
+      }
+      \strng{namehash}{8f7e1a9d9d8aee70dccc80adbb5b18dc}
+      \strng{fullhash}{8f7e1a9d9d8aee70dccc80adbb5b18dc}
+      \strng{fullhashraw}{8f7e1a9d9d8aee70dccc80adbb5b18dc}
+      \strng{bibnamehash}{8f7e1a9d9d8aee70dccc80adbb5b18dc}
+      \strng{authorbibnamehash}{8f7e1a9d9d8aee70dccc80adbb5b18dc}
+      \strng{authornamehash}{8f7e1a9d9d8aee70dccc80adbb5b18dc}
+      \strng{authorfullhash}{8f7e1a9d9d8aee70dccc80adbb5b18dc}
+      \strng{authorfullhashraw}{8f7e1a9d9d8aee70dccc80adbb5b18dc}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st edition}
+      \field{isbn}{0592027902}
+      \field{title}{Soft Ferrites: Properties and Applications}
+      \field{year}{1969}
+    \endentry
+    \entry{landau}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=cd545b80546b076f776588900c84fce0}{%
+           family={Landau},
+           familyi={L\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b7e277ec1529ea8cce6dd8ec193eb36f}{%
+           family={Lifschitz},
+           familyi={L\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=be04fe6a31e4c58e81791fb5fae8e9e5}{%
+           family={Pitaevski},
+           familyi={P\bibinitperiod},
+           given={L.P.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \list{publisher}{1}{%
+        {Pergamon}%
+      }
+      \strng{namehash}{373b3a637a9dbdc72020236f7a8b518e}
+      \strng{fullhash}{373b3a637a9dbdc72020236f7a8b518e}
+      \strng{fullhashraw}{373b3a637a9dbdc72020236f7a8b518e}
+      \strng{bibnamehash}{373b3a637a9dbdc72020236f7a8b518e}
+      \strng{authorbibnamehash}{373b3a637a9dbdc72020236f7a8b518e}
+      \strng{authornamehash}{373b3a637a9dbdc72020236f7a8b518e}
+      \strng{authorfullhash}{373b3a637a9dbdc72020236f7a8b518e}
+      \strng{authorfullhashraw}{373b3a637a9dbdc72020236f7a8b518e}
+      \strng{editorbibnamehash}{be04fe6a31e4c58e81791fb5fae8e9e5}
+      \strng{editornamehash}{be04fe6a31e4c58e81791fb5fae8e9e5}
+      \strng{editorfullhash}{be04fe6a31e4c58e81791fb5fae8e9e5}
+      \strng{editorfullhashraw}{be04fe6a31e4c58e81791fb5fae8e9e5}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Perspectives in Theoretical Physics}
+      \field{isbn}{978-0-08-036364-6}
+      \field{title}{3 - On the theory of the dispersion of magnetic permeability in ferromagnetic bodies Reprinted from Physikalische Zeitschrift der Sowjetunion 8, Part 2, 153, 1935.}
+      \field{year}{1992}
+      \field{pages}{51\bibrangedash 65}
+      \range{pages}{15}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-08-036364-6.50008-9
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780080363646500089
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780080363646500089
+      \endverb
+    \endentry
+    \entry{tsutaoka}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=63e0bb950fe924aad87c211105678895}{%
+           family={Tsutaoka},
+           familyi={T\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{63e0bb950fe924aad87c211105678895}
+      \strng{fullhash}{63e0bb950fe924aad87c211105678895}
+      \strng{fullhashraw}{63e0bb950fe924aad87c211105678895}
+      \strng{bibnamehash}{63e0bb950fe924aad87c211105678895}
+      \strng{authorbibnamehash}{63e0bb950fe924aad87c211105678895}
+      \strng{authornamehash}{63e0bb950fe924aad87c211105678895}
+      \strng{authorfullhash}{63e0bb950fe924aad87c211105678895}
+      \strng{authorfullhashraw}{63e0bb950fe924aad87c211105678895}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-8979}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{month}{03}
+      \field{number}{5}
+      \field{title}{{Frequency dispersion of complex permeability in Mn–Zn and Ni–Zn spinel ferrites and their composite materials}}
+      \field{volume}{93}
+      \field{year}{2003}
+      \field{pages}{2789\bibrangedash 2796}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1063/1.1542651
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.aip.org/aip/jap/article-pdf/93/5/2789/19266304/2789\_1\_online.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.1542651
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.1542651
+      \endverb
+    \endentry
+    \entry{aee423}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=01b54606daa8e0c68c5a66b21a12247c}{%
+           family={Dosoudil},
+           familyi={D\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1458b146158ed1fc256172dce21d8f6e}{%
+           family={Usakova},
+           familyi={U\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=39ac41698335f6f271605c16f57179f3}{%
+           family={Usak},
+           familyi={U\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=bca789e94438b01bdfc2b015283d903c}{%
+           family={Jancarik},
+           familyi={J\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac56cebb3823de29b14828b4929f2df6}
+      \strng{fullhash}{266a94b4954eddb174b0ed083031f4da}
+      \strng{fullhashraw}{266a94b4954eddb174b0ed083031f4da}
+      \strng{bibnamehash}{266a94b4954eddb174b0ed083031f4da}
+      \strng{authorbibnamehash}{266a94b4954eddb174b0ed083031f4da}
+      \strng{authornamehash}{ac56cebb3823de29b14828b4929f2df6}
+      \strng{authorfullhash}{266a94b4954eddb174b0ed083031f4da}
+      \strng{authorfullhashraw}{266a94b4954eddb174b0ed083031f4da}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1804-3119}
+      \field{journaltitle}{Advances in Electrical and Electronic Engineering}
+      \field{number}{2}
+      \field{title}{The Dispersion Characteristics of the Complex Permeability of NiZnCu Ferrite and its Composite Materials}
+      \field{volume}{3}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb http://advances.utc.sk/index.php/AEEE/article/view/423
+      \endverb
+      \verb{url}
+      \verb http://advances.utc.sk/index.php/AEEE/article/view/423
+      \endverb
+      \keyw{Dispersion; permeability; frequency; polymer; composite; material; ferrite.}
+    \endentry
+    \entry{6732932}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=f9c4f83e61bbf995b0f27385dc7bb84d}{%
+           family={Martinez},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b0a5347c7c1ec7befa3833230c64c6ea}{%
+           family={Babic},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cbf86ce3546948490179addad6f416fa}{%
+           family={Akyel},
+           familyi={A\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b19d9d14d9ba4a4de6bd860e1740eee}
+      \strng{fullhash}{0b19d9d14d9ba4a4de6bd860e1740eee}
+      \strng{fullhashraw}{0b19d9d14d9ba4a4de6bd860e1740eee}
+      \strng{bibnamehash}{0b19d9d14d9ba4a4de6bd860e1740eee}
+      \strng{authorbibnamehash}{0b19d9d14d9ba4a4de6bd860e1740eee}
+      \strng{authornamehash}{0b19d9d14d9ba4a4de6bd860e1740eee}
+      \strng{authorfullhash}{0b19d9d14d9ba4a4de6bd860e1740eee}
+      \strng{authorfullhashraw}{0b19d9d14d9ba4a4de6bd860e1740eee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Magnetics}
+      \field{number}{7}
+      \field{title}{On Evaluation of Inductance, DC Resistance, and Capacitance of Coaxial Inductors at Low Frequencies}
+      \field{volume}{50}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TMAG.2014.2303943
+      \endverb
+    \endentry
+    \entry{grover2013}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=fef38b68ec8b107a76ec2cdcc8bf6952}{%
+           family={Grover},
+           familyi={G\bibinitperiod},
+           given={F.W.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications}%
+      }
+      \strng{namehash}{fef38b68ec8b107a76ec2cdcc8bf6952}
+      \strng{fullhash}{fef38b68ec8b107a76ec2cdcc8bf6952}
+      \strng{fullhashraw}{fef38b68ec8b107a76ec2cdcc8bf6952}
+      \strng{bibnamehash}{fef38b68ec8b107a76ec2cdcc8bf6952}
+      \strng{authorbibnamehash}{fef38b68ec8b107a76ec2cdcc8bf6952}
+      \strng{authornamehash}{fef38b68ec8b107a76ec2cdcc8bf6952}
+      \strng{authorfullhash}{fef38b68ec8b107a76ec2cdcc8bf6952}
+      \strng{authorfullhashraw}{fef38b68ec8b107a76ec2cdcc8bf6952}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780486318356}
+      \field{series}{Dover Books on Electrical Engineering}
+      \field{title}{Inductance Calculations}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://books.google.de/books?id=H4LCAgAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.de/books?id=H4LCAgAAQBAJ
+      \endverb
+    \endentry
+    \entry{cheng}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=98eaed17f46974037852a3d5b3fe27f0}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Yuhua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3cde9b0f7127085f3c56669f1b6e8214}{%
+           family={Shu},
+           familyi={S\bibinitperiod},
+           given={Yaming},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{85e0c5f31ad6d27d7e908ff883bfb731}
+      \strng{fullhash}{85e0c5f31ad6d27d7e908ff883bfb731}
+      \strng{fullhashraw}{85e0c5f31ad6d27d7e908ff883bfb731}
+      \strng{bibnamehash}{85e0c5f31ad6d27d7e908ff883bfb731}
+      \strng{authorbibnamehash}{85e0c5f31ad6d27d7e908ff883bfb731}
+      \strng{authornamehash}{85e0c5f31ad6d27d7e908ff883bfb731}
+      \strng{authorfullhash}{85e0c5f31ad6d27d7e908ff883bfb731}
+      \strng{authorfullhashraw}{85e0c5f31ad6d27d7e908ff883bfb731}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Magnetics}
+      \field{number}{4}
+      \field{title}{A New Analytical Calculation of the Mutual Inductance of the Coaxial Spiral Rectangular Coils}
+      \field{volume}{50}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/TMAG.2013.2290972
+      \endverb
+    \endentry
+    \entry{5482787}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=100053026615f7d98c7b3e3ccc904c95}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={M-J.},
+           giveni={M\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=7e8b517157202f11a071bd50db66023a}{%
+           family={Randall},
+           familyi={R\bibinitperiod},
+           given={Clive\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{36a1ede97b4cd7909747bead67667996}
+      \strng{fullhash}{36a1ede97b4cd7909747bead67667996}
+      \strng{fullhashraw}{36a1ede97b4cd7909747bead67667996}
+      \strng{bibnamehash}{36a1ede97b4cd7909747bead67667996}
+      \strng{authorbibnamehash}{36a1ede97b4cd7909747bead67667996}
+      \strng{authornamehash}{36a1ede97b4cd7909747bead67667996}
+      \strng{authorfullhash}{36a1ede97b4cd7909747bead67667996}
+      \strng{authorfullhashraw}{36a1ede97b4cd7909747bead67667996}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Electrical Insulation Magazine}
+      \field{number}{3}
+      \field{title}{A brief introduction to ceramic capacitors}
+      \field{volume}{26}
+      \field{year}{2010}
+      \field{pages}{44\bibrangedash 50}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/MEI.2010.5482787
+      \endverb
+    \endentry
+    \entry{8094717}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=541c0ad38bbdec7748dca6fe78c3e623}{%
+           family={Asmanis},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=466fb9de2b5b7622b5202df778500bf6}{%
+           family={Stepins},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=57a9d3453321fa66f065341f79c31ce8}{%
+           family={Dzenis},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5da5e0ffb96b6bc854795d98d94a1286}{%
+           family={Asmanis},
+           familyi={A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f94f0e00b61c21b6d35560ce4b243d41}
+      \strng{fullhash}{1edc8597a9651a29f16fa2001550261d}
+      \strng{fullhashraw}{1edc8597a9651a29f16fa2001550261d}
+      \strng{bibnamehash}{1edc8597a9651a29f16fa2001550261d}
+      \strng{authorbibnamehash}{1edc8597a9651a29f16fa2001550261d}
+      \strng{authornamehash}{f94f0e00b61c21b6d35560ce4b243d41}
+      \strng{authorfullhash}{1edc8597a9651a29f16fa2001550261d}
+      \strng{authorfullhashraw}{1edc8597a9651a29f16fa2001550261d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 International Symposium on Electromagnetic Compatibility - EMC EUROPE}
+      \field{title}{3D modeling of surface-mount capacitors and mutual couplings between them}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/EMCEurope.2017.8094717
+      \endverb
+    \endentry
+    \entry{hft}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=4e233aa9aa21cf4bbc59a47976a0aa1d}{%
+           family={Siart},
+           familyi={S\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {German}%
+      }
+      \list{location}{1}{%
+        {Technical University of Munich}%
+      }
+      \strng{namehash}{4e233aa9aa21cf4bbc59a47976a0aa1d}
+      \strng{fullhash}{4e233aa9aa21cf4bbc59a47976a0aa1d}
+      \strng{fullhashraw}{4e233aa9aa21cf4bbc59a47976a0aa1d}
+      \strng{bibnamehash}{4e233aa9aa21cf4bbc59a47976a0aa1d}
+      \strng{authorbibnamehash}{4e233aa9aa21cf4bbc59a47976a0aa1d}
+      \strng{authornamehash}{4e233aa9aa21cf4bbc59a47976a0aa1d}
+      \strng{authorfullhash}{4e233aa9aa21cf4bbc59a47976a0aa1d}
+      \strng{authorfullhashraw}{4e233aa9aa21cf4bbc59a47976a0aa1d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Einführung in die {Hochfrequenztechnik}}
+      \field{type}{Lecture notes}
+      \field{year}{2020}
+    \endentry
+    \entry{lam}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=bcdc2e56fe193b384cfce5ed188145b0}{%
+           family={Lam},
+           familyi={L\bibinitperiod},
+           given={H.\bibnamedelimi Y.-F.},
+           giveni={H\bibinitperiod\bibinitdelim Y\bibinithyphendelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Englewood Cliffs, N.J.}%
+      }
+      \list{publisher}{1}{%
+        {Prentice-Hall}%
+      }
+      \strng{namehash}{bcdc2e56fe193b384cfce5ed188145b0}
+      \strng{fullhash}{bcdc2e56fe193b384cfce5ed188145b0}
+      \strng{fullhashraw}{bcdc2e56fe193b384cfce5ed188145b0}
+      \strng{bibnamehash}{bcdc2e56fe193b384cfce5ed188145b0}
+      \strng{authorbibnamehash}{bcdc2e56fe193b384cfce5ed188145b0}
+      \strng{authornamehash}{bcdc2e56fe193b384cfce5ed188145b0}
+      \strng{authorfullhash}{bcdc2e56fe193b384cfce5ed188145b0}
+      \strng{authorfullhashraw}{bcdc2e56fe193b384cfce5ed188145b0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-13-032755-7}
+      \field{title}{Analog and {Digital} {Filters}: {Design} and {Realization}}
+      \field{year}{1979}
+    \endentry
+    \entry{9422969}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=60af9bc009f709103e587bb92cee1cda}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ecfd4ce17fbe6ed4912699e1ff0317f7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hua},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c105754ab65082dd95df4da9ae35181}
+      \strng{fullhash}{2c105754ab65082dd95df4da9ae35181}
+      \strng{fullhashraw}{2c105754ab65082dd95df4da9ae35181}
+      \strng{bibnamehash}{2c105754ab65082dd95df4da9ae35181}
+      \strng{authorbibnamehash}{2c105754ab65082dd95df4da9ae35181}
+      \strng{authornamehash}{2c105754ab65082dd95df4da9ae35181}
+      \strng{authorfullhash}{2c105754ab65082dd95df4da9ae35181}
+      \strng{authorfullhashraw}{2c105754ab65082dd95df4da9ae35181}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+      \field{number}{6}
+      \field{title}{A High-Power Broadband Multi-Primary DAT-Based Doherty Power Amplifier for mm-Wave 5G Applications}
+      \field{volume}{56}
+      \field{year}{2021}
+      \field{pages}{1668\bibrangedash 1681}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/JSSC.2021.3070800
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
